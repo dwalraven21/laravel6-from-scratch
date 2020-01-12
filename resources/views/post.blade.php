@@ -7,9 +7,10 @@
     <title>Document</title>
 </head>
 <body>
- <!-- If you don't want to esacpe html for example -->
- <!-- <h1>{!! $name !!}</h1> -->
 
-<h1>{{ $name }}</h1>
+    <h1>My Blog Post</h1>
+
+    <p>{{ $post }}</p>
+
 </body>
 </html>
