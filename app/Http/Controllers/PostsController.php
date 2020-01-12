@@ -12,9 +12,9 @@ class PostsController extends Controller
         //dd => "dump and die" inspects the var and kills execution.
         // dd($post);
 
-        // if (! array_key_exists($post, $posts)) {
-        //     abort(404, 'Sorry, that post was not found.');
-        // }
+        if (! $post) {
+            abort(404);
+        }
 
         return view('post', [
             'post' => $post
